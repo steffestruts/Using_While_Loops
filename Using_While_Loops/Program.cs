@@ -1,17 +1,27 @@
-﻿bool connected = true;
-int number = 0;
+﻿Console.Clear();
 
-while (number < 5)
+bool isConnected = true;
+
+do
 {
-    Console.Clear();
-    Console.WriteLine("number = " + number);
-    for (int i = 0; i < 5000; i++)
-    {
-        Console.WriteLine("i = " + i);
-    }
-    if (number == 3)
-        break;
-    number++;
-}
+    Console.WriteLine("Connecting...");
+} while (!isConnected);
 
-Console.WriteLine("All done!");
+Console.ReadKey();
+
+/*
+    string answer = "";
+
+
+    do
+    {
+        Console.WriteLine("Menu options");
+        Console.WriteLine("1. Option 1");
+        Console.WriteLine("2. Option 2");
+        Console.WriteLine("3. Option 3");
+        Console.WriteLine("Q. Quit");
+
+        answer = Console.ReadLine()!;
+    }
+    while (answer != "q");
+ */
